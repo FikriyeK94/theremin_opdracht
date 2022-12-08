@@ -1,0 +1,198 @@
+body {
+	margin: 0;
+	font-family: "Courier New", Courier, monospace;
+}
+
+header {
+	font-size: 3em;	
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 50rem;
+	overflow: auto;
+	background-image: url(images/Thereminbanner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 20%;
+}
+
+h1 {
+	font-weight: lighter;
+}
+
+@media screen and (max-width: 600px) {
+	header {
+			font-size: 1.8em;
+	}
+}
+
+.section--info {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+	.section--info{
+			display:block;
+	}
+}
+
+.column[data-column="1/2"] {
+	box-sizing: border-box;
+	width: calc(50% - 2em);
+}
+
+.section--info .column--text {
+	max-width: calc(40rem - 2em);
+	margin-left: auto;
+	margin-right: 1em;
+}
+
+@media screen and (max-width: 600px) {
+	.section--info .column--text{
+		width: calc(100% - 2em);
+		margin-left: 1em;
+	}
+}
+
+.section--info .column--background {
+	background-image: url(images/Thereminkit.jpg);
+	background-size: cover;
+	background-position: 50% 90%;
+	height: 15em;
+	width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+	.section--info .column--background{
+			width: 100%;
+	}
+}
+
+.section--video {
+	max-width: 78rem;
+	margin: 0 auto;
+	padding: 1em;
+}
+
+.video {
+	display: flex;
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+	.video {
+			display: block;
+	}
+}
+
+iframe {
+	width: 33%;
+	height: 18em;
+}
+
+@media screen and (max-width: 600px) {
+	iframe {
+			width: 100%;
+	}
+}
+
+.section--winkel {
+	max-width: 78rem; 
+	margin: 0 auto;
+	padding: 1em;
+
+}
+
+.lijst {
+	display: flex;
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+	.lijst {
+			display: block;
+	}
+}
+
+.winkel-product {
+	position: relative;
+	width: 33%; /* maakt img breed */
+	box-sizing: border-box;
+	/*border: 2px solid tomato;*/
+}
+
+@media screen and (max-width: 600px) {
+	.winkel-product {
+			width: 100%;
+			margin-bottom: 0.5em;
+	}
+}
+
+.winkel-product:nth-child(2) {
+	background-image: url(images/musikproduktiv.jpg);
+	background-repeat: no-repeat;
+	min-height: 20rem;
+	background-size: cover;	
+}
+
+.winkel-product:nth-child(3) {
+	background-image: url(images/musicstore.jpg);
+	background-repeat: no-repeat;
+	min-height: 20rem;
+	background-size: cover;
+}
+
+.winkel-product:nth-child(1) {
+	background-image: url(images/baxshop.jpg);
+	background-repeat: no-repeat;
+	min-height: 20rem;
+	background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; /*code zorgt ervoor dat het groene layer goed overheen gaat */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+	background-color: brown;
+}
+
+.winkel-product:hover .overlay {
+  opacity: 1;
+}
+
+a {
+  color: white;
+  font-size: 1em;;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+footer {
+	max-width: 78rem;
+	margin: 0 auto;
+	padding: 1em;
+}
+
+footer p {
+	box-sizing: border-box;
+	width: calc(50% - 2em);
+}
+
+@media screen and (max-width: 600px) {
+	footer p{
+		width: calc(100% - 2em);	
+	}
+}

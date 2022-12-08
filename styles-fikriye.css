@@ -1,0 +1,47 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url(images/Thereminbanner.jpg);
+  background-repeat: no-repeat;
+  background-size:100%;
+}
+
+
+section:first-child h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: lighter;
+  font-size: 5.5em;
+  color: white;
+  text-align: center;
+
+}
+
+
+
+section:nth-child(2) h2 {
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 27em;
+  display: inline-block;
+
+}
+
+section:nth-child(2) p {
+  font-family: "Courier New", Courier, monospace;
+  display: inline-block;
+  width: 30em;
+
+}
+
+section:nth-child(2) img {
+
+
+  display: inline-block;
+  width: 30%; 
+}
+
+section:nth-child(3) h2 {
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 9em;
+  margin-left: 36em;
+}
